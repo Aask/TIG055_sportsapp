@@ -1,0 +1,4 @@
+INDEX VERSION 1.126+C:\Users\Ask\Documents\GitHub\TIG055_sportsapp\.metadata\.plugins\org.eclipse.jdt.core
+1284074322.index
+3188271708.index
+851092863.index
