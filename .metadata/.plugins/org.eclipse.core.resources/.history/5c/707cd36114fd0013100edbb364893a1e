@@ -1,0 +1,83 @@
+package com.example.aasports;
+
+public class Person {
+	
+	int todaysSteps;
+	int monthsSteps;
+	int kcal;
+	int todaysDistance;
+	int monthsDistance;
+	
+	String fname;
+	String sname;
+	int weight;
+	int lenght; 
+	
+	public Person( int st, int stm, int kc, int tDist, int mDist, String fn, String sn ){
+		todaysSteps = st;
+		monthsSteps = stm;
+		kcal = kc;
+		todaysDistance = tDist;
+		monthsDistance = mDist;
+		fname = fn;
+		sname = sn;
+	}
+	
+	public Person(){}
+	
+	public int getTodaysSteps (){
+		return todaysSteps;
+	}
+	
+	public void setTodaysSteps (int ts){
+		todaysSteps = ts; 
+	}
+	
+	public int getMonthsSteps (){
+		return monthsSteps;
+	}
+	
+	public void setMonthsStepss (int ms){
+		monthsSteps = ms; 
+	}
+	
+	public int getKcal (){
+		return kcal;
+	}
+	
+	public void setKcal (int k){
+		kcal = k; 
+	}
+	
+	public int  getTodaysDistance (){
+		return todaysDistance;
+	}
+	
+	public void setTodaysDistance (int td){
+		todaysDistance = td; 
+	}
+	
+	public int getMonthsDistance (){
+		return monthsDistance;
+	}
+	
+	public void setMonthsDistance (int md){
+		monthsDistance = md; 
+	}
+	
+	public String getFname(){
+		return fname;
+	}
+	
+	public void setFnames (String f){
+		fname = f; 
+	}
+	
+	public String getSname (){
+		return sname;
+	}
+	
+	public void setSname (String s){
+		sname = s; 
+	}
+}

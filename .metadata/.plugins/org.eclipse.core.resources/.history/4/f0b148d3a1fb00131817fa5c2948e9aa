@@ -1,0 +1,9 @@
+package com.example.aasports;
+/**
+ * 
+ * @author Ask
+ *
+ */
+public class Pedometer {
+	
+}

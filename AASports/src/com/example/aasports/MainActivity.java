@@ -4,18 +4,24 @@ import android.support.v7.app.ActionBarActivity;
 import android.support.v7.app.ActionBar;
 import android.support.v4.app.Fragment;
 import android.os.Bundle;
+import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
 import android.view.ViewGroup;
 import android.os.Build;
-
+/**
+ * 
+ * @author Ask
+ *
+ */
 public class MainActivity extends ActionBarActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+        Log.d("ON Create","");
         setContentView(R.layout.activity_main);
 
         if (savedInstanceState == null) {
@@ -24,8 +30,9 @@ public class MainActivity extends ActionBarActivity {
                     .commit();
         }
     }
-
-
+    /**
+     * 
+     */
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
         
@@ -33,7 +40,36 @@ public class MainActivity extends ActionBarActivity {
         getMenuInflater().inflate(R.menu.main, menu);
         return true;
     }
+    /**
+     * 
+     */
+    @Override
+    public void onStart(){
+    	super.onStart();
+    	 Log.d("ON Start","");
+    }
+    /**
+     * 
+     */
+    @Override
+    public void onStop(){
+   	 super.onStop();
+   	 Log.d("ON stop",""); 
+    }
+    /**
+     * 
+     */
+     @Override
+     public void onPause(){
+    	 super.onPause();
+    	 Log.d("ON pause","");
+     }
+     
 
+     
+     /**
+      * 
+      */
     @Override
     public boolean onOptionsItemSelected(MenuItem item) {
         // Handle action bar item clicks here. The action bar will
