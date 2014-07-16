@@ -10,10 +10,12 @@ import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.TextView;
 import android.os.Build;
+
 /**
  * 
- * @author Ask
+ * @author Alexander Ask
  *
  */
 public class MainActivity extends ActionBarActivity {
@@ -29,7 +31,13 @@ public class MainActivity extends ActionBarActivity {
                     .add(R.id.container, new PlaceholderFragment())
                     .commit();
         }
+        Person p = new Person(); 
+        
+        //Person Activity
+        
+        //SensorManagement sa = new SensorManagement(this, p); 
     }
+    
     /**
      * 
      */
@@ -40,6 +48,7 @@ public class MainActivity extends ActionBarActivity {
         getMenuInflater().inflate(R.menu.main, menu);
         return true;
     }
+    
     /**
      * 
      */
@@ -48,6 +57,7 @@ public class MainActivity extends ActionBarActivity {
     	super.onStart();
     	 Log.d("ON Start","");
     }
+    
     /**
      * 
      */
@@ -56,6 +66,7 @@ public class MainActivity extends ActionBarActivity {
    	 super.onStop();
    	 Log.d("ON stop",""); 
     }
+    
     /**
      * 
      */
@@ -64,8 +75,6 @@ public class MainActivity extends ActionBarActivity {
     	 super.onPause();
     	 Log.d("ON pause","");
      }
-     
-
      
      /**
       * 
@@ -96,6 +105,33 @@ public class MainActivity extends ActionBarActivity {
             View rootView = inflater.inflate(R.layout.fragment_main, container, false);
             return rootView;
         }
+    }
+   
+    /**
+     * 
+     * @return
+     */
+    public TextView getStepView(){
+    	TextView tw = (TextView)findViewById(R.id.stepsTW);
+    	return tw; 
+    }
+    
+    /**
+     * 
+     * @return
+     */
+    public TextView getDistanceView(){
+    	TextView tw = (TextView)findViewById(R.id.distanceTW);
+    	return tw; 
+    }
+    
+    /**
+     * 
+     * @return
+     */
+    public TextView getKcalView(){
+    	TextView tw = (TextView)findViewById(R.id.kcalTW);
+    	return tw; 
     }
 
 }

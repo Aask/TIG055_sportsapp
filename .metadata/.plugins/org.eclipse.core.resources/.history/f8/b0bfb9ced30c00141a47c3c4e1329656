@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">AASports</string>
+    <string name="action_settings">Settings</string>
+    <string name = "stepsString"></string>
+    <string name = "distanceString"></string>
+    <string name = "kcalString"></string>
+
+</resources>

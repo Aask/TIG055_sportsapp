@@ -1,0 +1,20 @@
+package com.example.aasports;
+
+import android.content.Context;
+import android.database.sqlite.SQLiteDatabase.CursorFactory;
+import android.database.sqlite.SQLiteOpenHelper;
+
+public class DatabaseManager extends SQLiteOpenHelper {
+
+	private static final String DATABASE_NAME = ""; 
+	private static final int DATABASE_VERSION = 1; 
+	
+	private static final String COLUMN_ID = "";  
+	private static final String COLUMN_NAME = "";
+	private static final String COLUMN_WEIGHT = ""; 
+	private static final String COLUMN_
+	public DatabaseManager(Context context) {
+		super(context, DATABASE_NAME, null, DATABASE_VERSION);		
+	}
+
+}

@@ -1,21 +1,27 @@
 package com.example.aasports;
 /**
  * 
- * @author Ask
+ * @author Alexander Ask
  *
  */
 public class Person {
 	
-	int todaysSteps;
-	int monthsSteps;
-	int kcal;
-	int todaysDistance;
-	int monthsDistance;
+	public static final int MALE = 0;
+	public static final int FEMALE = 1;
 	
-	String fname;
-	String sname;
-	int weight;
-	int lenght; 
+	private int id = 0; 
+	private String fname = "";
+	private String sname = "";
+	private double weight = 0.0;
+	private int height = 0;
+	private int gender = 0; 
+	
+	private int todaysSteps = 0;
+	private int monthsSteps = 0;
+	private int kcal = 0;
+	private int todaysDistance = 0;
+	private int monthsDistance = 0;
+	
 	/**
 	 * 
 	 * @param st
@@ -26,15 +32,25 @@ public class Person {
 	 * @param fn
 	 * @param sn
 	 */
-	public Person( int st, int stm, int kc, int tDist, int mDist, String fn, String sn ){
-		todaysSteps = st;
-		monthsSteps = stm;
-		kcal = kc;
-		todaysDistance = tDist;
-		monthsDistance = mDist;
-		fname = fn;
-		sname = sn;
+	public Person( int identifier, String firstName, String surName, int personWeight, 
+			int personHeight, int sex, int stepToday, int stepMonth, int calories,
+			int distanceToday, int distanceMonth){
+		
+		id = identifier; 
+		fname = firstName;
+		sname = surName;
+		weight = personWeight; 
+		height = personHeight;
+		gender = sex; 
+		
+		todaysSteps = stepToday;
+		monthsSteps = stepMonth;
+		kcal = calories;
+		todaysDistance = distanceToday;
+		monthsDistance = distanceMonth;
+
 	}
+	
 	/**
 	 * 
 	 */
@@ -64,7 +80,7 @@ public class Person {
 	 * 
 	 * @param ms
 	 */
-	public void setMonthsStepss (int ms){
+	public void setMonthsSteps (int ms){
 		monthsSteps = ms; 
 	}
 	/**
@@ -137,4 +153,68 @@ public class Person {
 	public void setSname (String s){
 		sname = s; 
 	}
+	
+	/**
+	 * 
+	 * @return
+	 */
+	public double getWeight(){
+		return weight;
+	}
+	
+	/**
+	 * 
+	 * @param w
+	 */
+	public void setWeight(double w){
+		weight = w; 
+	}
+	/**
+	 * 
+	 * @return
+	 */
+	public double getHeight(){
+		return height;
+	}
+	
+	/**
+	 * 
+	 * @param w
+	 */
+	public void setHeight(int h){
+		height = h; 
+	}
+	
+	/**
+	 * 
+	 * @param g
+	 */
+	public void setGender(int g){
+		gender = g; 
+	}
+	
+	/**
+	 * 
+	 * @return
+	 */
+	public int getGender(){
+		return gender; 
+	}
+	
+	/**
+	 * 
+	 * @param ID
+	 */
+	public void setID(int ID){
+		id = ID; 
+	}
+	
+	/**
+	 * 
+	 * @return
+	 */
+	public int getID(){
+		return id; 
+	}
+
 }

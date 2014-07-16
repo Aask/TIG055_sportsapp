@@ -1,0 +1,204 @@
+package com.example.aasports;
+/**
+ * 
+ * @author Alexander Ask
+ *
+ */
+public class Person {
+	
+	public static final int MALE = 0;
+	public static final int FEMALE = 1;
+	
+	private int todaysSteps;
+	private int monthsSteps;
+	private int kcal;
+	private int todaysDistance;
+	private int monthsDistance;
+	
+	private int id; 
+	private String fname;
+	private String sname;
+	private double weight;
+	private int height;
+	private int gender; 
+	/**
+	 * 
+	 * @param st
+	 * @param stm
+	 * @param kc
+	 * @param tDist
+	 * @param mDist
+	 * @param fn
+	 * @param sn
+	 */
+	public Person( int st, int stm, int kc, int tDist, int mDist, String fn, String sn, int w, int h, int g){
+		todaysSteps = st;
+		monthsSteps = stm;
+		kcal = kc;
+		todaysDistance = tDist;
+		monthsDistance = mDist;
+		fname = fn;
+		sname = sn;
+		weight = w; 
+		height = h;
+		gender = g; 
+	}
+	/**
+	 * 
+	 */
+	public Person(){}
+	/**
+	 * 
+	 * @return
+	 */
+	public int getTodaysSteps (){
+		return todaysSteps;
+	}
+	/**
+	 * 
+	 * @param ts
+	 */
+	public void setTodaysSteps (int ts){
+		todaysSteps = ts; 
+	}
+	/**
+	 * 
+	 * @return
+	 */
+	public int getMonthsSteps (){
+		return monthsSteps;
+	}
+	/**
+	 * 
+	 * @param ms
+	 */
+	public void setMonthsStepss (int ms){
+		monthsSteps = ms; 
+	}
+	/**
+	 * 
+	 * @return
+	 */
+	public int getKcal (){
+		return kcal;
+	}
+	/**
+	 * 
+	 * @param k
+	 */
+	public void setKcal (int k){
+		kcal = k; 
+	}
+	/**
+	 * 
+	 * @return
+	 */
+	public int  getTodaysDistance (){
+		return todaysDistance;
+	}
+	/**
+	 * 
+	 * @param td
+	 */
+	public void setTodaysDistance (int td){
+		todaysDistance = td; 
+	}
+	/**
+	 * 
+	 * @return
+	 */
+	public int getMonthsDistance (){
+		return monthsDistance;
+	}
+	/**
+	 * 
+	 * @param md
+	 */
+	public void setMonthsDistance (int md){
+		monthsDistance = md; 
+	}
+	/**
+	 * 
+	 * @return
+	 */
+	public String getFname(){
+		return fname;
+	}
+	/**
+	 * 
+	 * @param f
+	 */
+	public void setFnames (String f){
+		fname = f; 
+	}
+	/**
+	 * 
+	 * @return
+	 */
+	public String getSname (){
+		return sname;
+	}
+	/**
+	 * 
+	 * @param s
+	 */
+	public void setSname (String s){
+		sname = s; 
+	}
+	
+	/**
+	 * 
+	 * @return
+	 */
+	public double getWeight(){
+		return weight;
+	}
+	
+	/**
+	 * 
+	 * @param w
+	 */
+	public void setWeight(double w){
+		weight = w; 
+	}
+	/**
+	 * 
+	 * @return
+	 */
+	public double getHeight(){
+		return height;
+	}
+	
+	/**
+	 * 
+	 * @param w
+	 */
+	public void setHeight(int h){
+		height = h; 
+	}
+	
+	/**
+	 * 
+	 * @param g
+	 */
+	public void setGender(int g){
+		gender = g; 
+	}
+	
+	/**
+	 * 
+	 * @return
+	 */
+	public int getGender(){
+		return gender; 
+	}
+	
+	public void setID(int ID){
+		id = ID; 
+	}
+	
+	public int getID(){
+		return id; 
+	}
+
+}
